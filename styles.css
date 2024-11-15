@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-column {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #FF6F61;
+    margin-bottom: 20px;
+}
+
+.timer, .message {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#fixedMessage {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Coluna Direita para Galeria de Fotos */
+.right-column {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Botões de Navegação */
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #FFF;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
